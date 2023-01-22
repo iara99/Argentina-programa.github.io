@@ -6,3 +6,140 @@
     box-sizing: border-box;
     font-family: 'Poppins', 'Arial', sans-serif;
 }
+
+body {
+    background-color: #FCE9E9;
+}
+
+/* img {
+    width: 100%;
+    height: auto;
+} */
+
+li {
+ list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+section {
+    min-height: 650px;
+}
+
+#site-cv {
+    margin: 45px auto;
+    color: #5E5E5E;
+}
+
+              /* SIDEBAR */
+
+#site-cv .sidebar {
+    background-color: #F8F8F8;
+    height: 650px;
+    border-radius:15px 0 0 15px;
+}
+.sidebar ul {
+    margin: 150px 0;
+    padding-left: 0px;
+}
+.sidebar li {
+    margin: 35px 0;
+}
+.sidebar a{
+    color: #5E5E5E;
+    transition: 0.1s;
+    font-size: 18px;
+    padding: 5px;
+}
+.sidebar a:hover, .sidebar a:focus, .sidebar a:active{
+    color: #F28B8B;
+    font-weight: 600;
+}
+
+ .sidebar a span {
+    width: 45px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 25px;
+    padding: 25px;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+
+.sidebar a:not(.button)[aria-selected]:not([aria-selected=""]):not([aria-selected=false]) {
+    font-weight: 600;
+    color: #F28B8B;
+}
+
+.sidebar a:hover span.me, .sidebar a:hover span.skills, .sidebar a:hover span.experience, .sidebar a:hover span.works, .sidebar a:hover span.contact {
+    background-color: #F28B8B;
+}
+
+span.me {
+    background: url("../images/me.png") no-repeat;
+}
+a:hover span.me {
+    background: url("../images/me-2.png") no-repeat;
+}
+span.skills {
+    background: url("../images/skills.png") no-repeat;
+}
+a:hover span.skills {
+    background: url("../images/skills-2.png") no-repeat;
+}
+span.experience {
+    background: url("../images/experience.png") no-repeat;
+}
+a:hover span.experience {
+    background: url("../images/experience-2.png") no-repeat;
+}
+span.works {
+    background: url("../images/works.png") no-repeat;
+}
+a:hover span.works {
+    background: url("../images/works-2.png") no-repeat;
+}
+span.contact {
+    background: url("../images/contact.png") no-repeat;
+}
+a:hover span.contact {
+    background: url("../images/contact-2.png") no-repeat;
+}
+ 
+
+            /* CONTENIDO */
+
+#site-cv .content {
+    background-color: #fff;
+    height: 650px;
+    border-radius:0 15px 15px 0;
+    overflow-y: scroll;
+}
+
+
+
+#site-cv .content::-webkit-scrollbar {
+    width: 6px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+}
+
+#site-cv .content::-webkit-scrollbar-thumb {
+    background: #F28B8B;
+    border-radius: 4px;
+}
+
+
+@media (max-width: 768px) {
+
+    #site-cv {
+        width: 90%;
+    }
+
+    #site-cv .sidebar {
+        background-color: #F8F8F8;
+        height: 50px;
+        border-radius:15px 15px 0 0;
+    }
+  }
