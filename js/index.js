@@ -1,17 +1,5 @@
-console.log('hola');
-
-document.getElementById('skills').innerHTML = 'hola';
-
-// function ScrollUp (){
-//     const ScrollUp = document.getElementById('scroll-up');
-//     if (this.ScrollY >= 560) ScrollUp.classList.add('showScroll');
-//     else scrollUp.classList.remove('showScroll');
-// }
-
-// window.addEventListener('scroll', ScrollUp)
-
-// Get the button:
-let mybutton = document.getElementById("myBtn");
+      // SCROLL
+let mybutton = document.getElementById("TopBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -23,9 +11,14 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+
+
+
+

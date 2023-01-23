@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi CV</title>
+    <title>TP</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <!-- OPEN GRAPH  -->
     <meta property="og:title" content="CV" />
@@ -20,7 +20,7 @@
     <div class="container" id="site-cv">
         <div class="row">
             <aside class="col-12 col-md-4 col-lg-3 sidebar">
-                <ul>
+                <ul class="scroll-nav">
                     <li><a href="#aboutme" aria-selected="true"><span class="me"></span> SOBRE MI</a></li>
                     <li><a href="#skills"><span class="skills"></span>HABILIDADES</a></li>
                     <li><a href="#experience"><span class="experience"></span>EXPERIENCIA</a></li>
@@ -31,29 +31,146 @@
             
             <div class="col-12 col-md-8 col-lg-9 content">
                 <section id="aboutme">
+                    <div class="h2-background"></div>
+                    <h2>SOBRE MÍ</h2>
                     <div class="row mi-info">
-                        
-                            <div class="col-12 col-md-2">
-                                <img class="photo" src="images/foto.png">
+                        <div class="col-12 col-lg-3 col-xl-2">
+                            <img class="photo" src="images/foto.png">
+                        </div>
+                        <div class="col-12 col-lg-9 col-xl-10">
+                            <p class="name">Josephine James</p>
+                            <p class="puesto">Frontend Developer</p>
+                            <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="row info-personal">
+                        <div class="row">
+                            <div class="col-5 col-lg-3">
+                                <p class="title-info-cv">EDAD</p>
                             </div>
+                            <div class="col-7 col-lg-3">
+                                <p class="text-info-cv">23</p>
+                            </div>
+                            <div class="col-5 col-lg-3">
+                                <p class="title-info-cv">NACIONALIDAD</p>
+                            </div>
+                            <div class="col-7 col-lg-3">
+                                <p class="text-info-cv">Argentina</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5 col-lg-3">
+                                <p class="title-info-cv">TELÉFONO</p>
+                            </div>
+                            <div class="col-7 col-lg-3">
+                                <p class="text-info-cv">351 1234567</p>
+                            </div>
+                            <div class="col-5 col-lg-3">
+                                <p class="title-info-cv">EMAIL</p>
+                            </div>
+                            <div class="col-7 col-lg-3">
+                                <p class="text-info-cv">josephine.james@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5 col-lg-3">
+                                <p class="title-info-cv">DIRECCIÓN</p>
+                            </div>
+                            <div class="col-7 col-lg-3">
+                                <p class="text-info-cv">Av. Colón 1245, Córdoba</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div >
+                        <h3>INTERESES</h3>
+                    </div>
+                </section>
 
-                            <div class="col-12 col-md-10">
-                                <h1 class="name">Josephine James</h1>
-                                <p class="puesto">Frontend Developer</p>
-                                <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <section id="skills">
+                    <div class="h2-background"></div>
+                    <h2>HABILIDADES</h2>
+                    
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h3>FRONTEND</h3>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="skill">
+                                        <div class="skill-name">HTML/CSS
+                                            <span>95%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-per" per="95%" style="max-width: 95%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="skill">
+                                        <div class="skill-name">JAVASCRIPT<span>35%</span></div>
+                                        <div class="skill-bar">
+                                            <div class="skill-per" per="35%" style="max-width: 35%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="skill">
+                                        <div class="skill-name">ANGULAR<span>35%</span></div>
+                                        <div class="skill-bar">
+                                            <div class="skill-per" per="35%" style="max-width: 35%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h3>DISEÑO</h3>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="skill">
+                                        <div class="skill-name">FIGMA<span>85%</span></div>
+                                        <div class="skill-bar">
+                                            <div class="skill-per" per="85%" style="max-width: 85%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="skill">
+                                        <div class="skill-name">PHOTOSHOP<span>75%</span></div>
+                                        <div class="skill-bar">
+                                            <div class="skill-per" per="75%" style="max-width: 75%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="skill">
+                                        <div class="skill-name">ILLUSTRATOR<span>75%</span></div>
+                                        <div class="skill-bar">
+                                            <div class="skill-per" per="75%" style="max-width: 75%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
                     
-                  
+                   
+
+
                 </section>
-                <section id="skills">skills
+                <section id="experience">
+                    <div class="h2-background"></div>
+                    <h2>EXPERIENCIA</h2>
                 </section>
-                <section id="experience">experience</section>
-                <section id="works">works</section>
+                <section id="works">
+                    <div class="h2-background"></div>
+                    <h2>MIS TRABAJOS</h2>
+                </section>
                 <section id="contact">
-                    
-                    <button onclick="topFunction()" id="myBtn" title="Go to top">+</button>
+                    <div class="h2-background"></div>
+                    <h2>CONTACTO</h2>                   
                 </section>
+                <button onclick="topFunction()" id="TopBtn" class="top" title="Go to top">+</button>
                 <!-- <a style="position: fixed; right: 1rem; bottom: 5rem; background-color: red; width: 25px; height: 25px; border-radius: 25px; padding: 25px; color: aliceblue;" class="scroll-up" id="scroll-up">
                     +
                 </a> -->
