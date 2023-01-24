@@ -121,7 +121,7 @@ h2 {
     color: #F28B8B;
     font-weight: 600;
     font-size: 30px;
-    margin: 25px 40px 50px 40px;
+    margin: 0px 40px 45px 40px;
     position: relative;
     z-index: 5;
     /* background-color: #F8F8F8; */
@@ -132,7 +132,8 @@ h2 {
     width: 150px;
     height: 25px;
     position: relative;
-    top: 67px;
+    top: 40px;
+    left: 15px;
     z-index: 0;
 }
 
@@ -140,6 +141,11 @@ h3 {
     font-weight: 600;
     font-size: 20px;
     color: #9780C8;
+    margin: 30px 25px 10px 25px;
+}
+h3 img {
+    margin-right: 10px;
+    width: 30px;
 }
 
             /* SOBRE MI  */
@@ -208,7 +214,6 @@ margin-left: 15px;
     border-radius: 4px;
     position: relative;
     animation: fillBars 4s 1;
-    
 }
 
  @keyframes fillBars {
@@ -219,6 +224,153 @@ margin-left: 15px;
         width: 100%;
     }
  }
+
+ .idioma-progress-circle {
+    position: relative;
+    background-color: #F28B8B;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 15px auto;
+ }
+ .idioma-progress-circle:before {
+    content: "";
+    position: absolute;
+    width: 84%;
+    height: 84%;
+    background-color: #fff;
+    border-radius: 50%;
+ }
+ .idioma-progress-circle  .value-container {
+    position: relative;
+    font-size: 13px;
+    opacity: 0.7;
+ }
+ .idioma-name {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+ }
+
+
+
+
+
+ .block {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+}
+
+.box {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: calc(100% - 50px);
+	height: calc(100% - 50px);
+	border-radius: 50%;
+
+}
+
+.box::before {
+	position: absolute;
+	content: '';
+	width: calc(100% + 28px);
+	height: calc(100% + 28px);
+	border-radius: 50%;
+}
+
+.box .number span {
+	font-size: 13px;
+    opacity: 0.7;
+
+}
+
+.box .title {
+	font-size: 15px;
+	color: #9b9b9b;
+}
+
+.svg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	fill: none;
+	transform: rotate(-90deg);
+}
+
+.circle {
+	stroke: url(#gradientStyle);
+	stroke-width: 4px;
+	stroke-dasharray: 503;
+	stroke-dashoffset: 503;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	transition: 2s stroke-dashoffset;
+}
+
+
+
+
+.inner-box{
+	position: relative;
+	padding-left: 230px;
+	padding-top: 70px;
+	min-height: 200px;
+}
+
+.graph-outer{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	text-align: center;
+	background: #fafafa;
+	border-radius: 50%;
+}
+
+.graph-outer .count-box{
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    top: 50%;
+    margin-top: -40px;
+    width: 80px;
+    height: 80px;
+    padding: 20px 10px;
+    font-size: 20px;
+    color: #495369;
+    font-weight: 500;
+    line-height: 40px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.10);
+}
+
+.text{
+	position: relative;	
+	font-size: 17px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+
+
+
+
 
 
             /* SCROLL */
