@@ -19,15 +19,15 @@
 <body>
     <div class="container" id="site-cv">
         <div class="row">
-            <aside class="col-12 col-md-4 col-lg-3 sidebar">
+            <nav class="col-12 col-md-4 col-lg-3 sidebar">
                 <ul class="scroll-nav">
-                    <li><a href="#aboutme" aria-selected="true"><span class="me"></span> SOBRE MI</a></li>
-                    <li><a href="#skills"><span class="skills"></span>HABILIDADES</a></li>
-                    <li><a href="#experience"><span class="experience"></span>EXPERIENCIA</a></li>
-                    <li><a href="#works"><span class="works"></span>MIS TRABAJOS</a></li>
-                    <li><a href="#contact"><span class="contact"></span>CONTACTO</a></li>
+                    <li class="list active"><a href="#aboutme"><span class="me"></span> SOBRE MI</a></li>
+                    <li class="list"><a href="#skills"><span class="skills"></span>HABILIDADES</a></li>
+                    <li class="list"><a href="#experience"><span class="experience"></span>EXPERIENCIA</a></li>
+                    <li class="list"><a href="#works"><span class="works"></span>MIS TRABAJOS</a></li>
+                    <li class="list"><a href="#contact"><span class="contact"></span>CONTACTO</a></li>
                 </ul>
-            </aside>
+            </nav>
             
             <div class="col-12 col-md-8 col-lg-9 content">
                 <section id="aboutme">
@@ -96,27 +96,27 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="skill">
-                                        <div class="skill-name">HTML/CSS
+                                        <p class="skill-name">HTML/CSS
                                             <span>95%</span>
-                                        </div>
+                                        </p>
                                         <div class="skill-bar">
-                                            <div class="skill-per" per="95%" style="max-width: 95%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="skill">
-                                        <div class="skill-name">JAVASCRIPT<span>35%</span></div>
-                                        <div class="skill-bar">
-                                            <div class="skill-per" per="35%" style="max-width: 35%;"></div>
+                                            <div class="skill-per" data-progress="95"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="skill">
-                                        <div class="skill-name">ANGULAR<span>35%</span></div>
+                                        <p class="skill-name">JAVASCRIPT<span>35%</span></p>
                                         <div class="skill-bar">
-                                            <div class="skill-per" per="35%" style="max-width: 35%;"></div>
+                                            <div class="skill-per" data-progress="35"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="skill">
+                                        <p class="skill-name">ANGULAR<span>20%</span></p>
+                                        <div class="skill-bar">
+                                            <div class="skill-per" data-progress="20"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -127,57 +127,54 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="skill">
-                                        <div class="skill-name">FIGMA<span>85%</span></div>
+                                        <p class="skill-name">FIGMA<span>85%</span></p>
                                         <div class="skill-bar">
-                                            <div class="skill-per" per="85%" style="max-width: 85%;"></div>
+                                            <div class="skill-per" data-progress="85"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="skill">
-                                        <div class="skill-name">PHOTOSHOP<span>75%</span></div>
+                                        <p class="skill-name">PHOTOSHOP<span>75%</span></p>
                                         <div class="skill-bar">
-                                            <div class="skill-per" per="75%" style="max-width: 75%;"></div>
+                                            <div class="skill-per" data-progress="75"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="skill">
-                                        <div class="skill-name">ILLUSTRATOR<span>75%</span></div>
+                                        <p class="skill-name">ILLUSTRATOR<span>75%</span></p>
                                         <div class="skill-bar">
-                                            <div class="skill-per" per="75%" style="max-width: 75%;"></div>
+                                            <div class="skill-per" data-progress="75"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
                         <div class="col-12 col-md-6">
                             <h3><img src="images/idiomas.png">IDIOMAS</h3>
                             <div class="row">
                                 <div class="col-12 col-md-4">
-                                    <div class="idioma-progress-circle">
-                                        <div class="value-container">0%</div>
+                                    <div class="round" data-value=".99" data-size="120" data-thikness="80">
+                                        <strong class="value-container2"></strong>
+                                        <div class="idioma-name">Español</div>
                                     </div>
-                                    <div class="idioma-name">Español</div>
                                 </div>
                                 <div class="col-12 col-md-4">
-                                    <div class="idioma-progress-circle ingles">
-                                        <div class="value-container value-ingles">0%</div>
+                                    <div class="round" data-value="0.35" data-size="120" data-thikness="80">
+                                        <strong class="value-container2"></strong>
+                                        <div class="idioma-name">Inglés</div>
                                     </div>
-                                    <div class="idioma-name">Ingles</div>
                                 </div>
-                               
-                                
-                              
-                                
+                                <div class="col-12 col-md-4">
+                                    <div class="round" data-value="0.15" data-size="120" data-thikness="80">
+                                        <strong class="value-container2"></strong>
+                                        <div class="idioma-name">Coreano</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
-                   
-
-
                 </section>
                 <section id="experience">
                     <div class="h2-background"></div>
@@ -192,16 +189,14 @@
                     <h2>CONTACTO</h2>                   
                 </section>
                 <button onclick="topFunction()" id="TopBtn" class="top" title="Go to top">+</button>
-                <!-- <a style="position: fixed; right: 1rem; bottom: 5rem; background-color: red; width: 25px; height: 25px; border-radius: 25px; padding: 25px; color: aliceblue;" class="scroll-up" id="scroll-up">
-                    +
-                </a> -->
-                
             </div>
         </div>
     </div>    
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

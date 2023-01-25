@@ -25,7 +25,7 @@ section {
 
 
 #site-cv {
-    margin: 50px auto;
+    margin: 25px auto;
     color: #5E5E5E;
 }
 
@@ -33,10 +33,11 @@ section {
 
 #site-cv .sidebar {
     background-color: #F8F8F8;
-    height: 650px;
+    height: 680px;
     border-radius:15px 0 0 15px;
     position: sticky;
-    top: 50px;
+    top: 0;
+    z-index: 99;
 }
 .sidebar ul {
     margin: 150px 0;
@@ -51,7 +52,7 @@ section {
     font-size: 18px;
     padding: 5px;
 }
-.sidebar a:hover, .sidebar a:focus, .sidebar a:active{
+.sidebar a:hover, .sidebar a:focus, .sidebar a:active, .active a{
     color: #F28B8B;
     font-weight: 600;
 }
@@ -66,44 +67,44 @@ section {
     transition: 0.3s;
     margin-right: 10px;
 }
-
+/* 
 .sidebar a:not(.button)[aria-selected]:not([aria-selected=""]):not([aria-selected=false]) {
     font-weight: 600;
     color: #F28B8B;
-}
+} */
 
-.sidebar a:hover span.me, .sidebar a:hover span.skills, .sidebar a:hover span.experience, .sidebar a:hover span.works, .sidebar a:hover span.contact {
+.sidebar a:hover span.me, .sidebar a:hover span.skills, .sidebar a:hover span.experience, .sidebar a:hover span.works, .sidebar a:hover span.contact, .sidebar .active span.me, .sidebar .active span.skills, .sidebar .active span.experience, .sidebar .active span.works, .sidebar .active span.contact  {
     background-color: #F28B8B;
 }
 
 span.me {
     background: url("../images/me.png") no-repeat;
 }
-a:hover span.me {
+a:hover span.me, .active span.me {
     background: url("../images/me-2.png") no-repeat;
 }
 span.skills {
     background: url("../images/skills.png") no-repeat;
 }
-a:hover span.skills {
+a:hover span.skills, .active span.skills {
     background: url("../images/skills-2.png") no-repeat;
 }
 span.experience {
     background: url("../images/experience.png") no-repeat;
 }
-a:hover span.experience {
+a:hover span.experience, .active span.experience {
     background: url("../images/experience-2.png") no-repeat;
 }
 span.works {
     background: url("../images/works.png") no-repeat;
 }
-a:hover span.works {
+a:hover span.works, .active span.works {
     background: url("../images/works-2.png") no-repeat;
 }
 span.contact {
     background: url("../images/contact.png") no-repeat;
 }
-a:hover span.contact {
+a:hover span.contact, .active span.contact {
     background: url("../images/contact-2.png") no-repeat;
 }
  
@@ -207,23 +208,60 @@ margin-left: 15px;
     background-color: #FCE9E9;
     height: 8px;
     border-radius: 4px;
+    width: 100%;
 }
 .skill-per {
     background-color: #F28B8B;
     height: 8px;
     border-radius: 4px;
     position: relative;
-    animation: fillBars 4s 1;
+    width: 0%;
+    opacity: 0;
+    transition: all 1s;
 }
 
- @keyframes fillBars {
-    from{
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
- }
+
+
+
+
+
+.round {
+    margin: 30px 0;
+    min-height: 120px;
+    position: relative;
+}
+
+.round strong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    transform: translate(-50%);
+    font-size: 13px;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+
+
+.progress-bar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ddd;
+  position: relative;
+}
+
+.progress {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #4CAF50;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+}
 
  .idioma-progress-circle {
     position: relative;
@@ -243,7 +281,7 @@ margin-left: 15px;
     background-color: #fff;
     border-radius: 50%;
  }
- .idioma-progress-circle  .value-container {
+ .idioma-progress-circle  .value-container, .value-container2 {
     position: relative;
     font-size: 13px;
     opacity: 0.7;
@@ -417,8 +455,9 @@ margin-left: 15px;
     #site-cv .sidebar {
         height: 75px;
         border-radius:15px 15px 0 0;
-        position: initial;
+        /* position: initial; */
         padding: 0;
+        top: -10px;
     }
     .sidebar ul {
         margin: 0;
