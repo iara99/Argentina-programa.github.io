@@ -115,7 +115,7 @@ a:hover span.contact, .active span.contact {
     background-color: #fff;
     /* height: 650px; */
     border-radius:0 15px 15px 0;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 h2 {
@@ -273,19 +273,31 @@ margin-left: 15px;
  }
 
 
+            /* MIS TRABAJOS  */
+.trabajos-container{
+    padding: 0 15px;
+}
 
+.trabajitos {
+    margin: 10px 0; 
+}
+.trabajitos img {
+    width: 100%;
+    border-radius: 10px;
+}
 
 
 
             /* SCROLL */
-#site-cv .content::-webkit-scrollbar {
+#site-cv .content::-webkit-scrollbar, html::-webkit-scrollbar {
     width: 6px;     /* Tamaño del scroll en vertical */
-    height: 8px;    /* Tamaño del scroll en horizontal */
+    height: 2px;    /* Tamaño del scroll en horizontal */
 }
 
-#site-cv .content::-webkit-scrollbar-thumb {
+#site-cv .content::-webkit-scrollbar-thumb, html::-webkit-scrollbar {
     background: #F28B8B;
     border-radius: 4px;
+    /* display: none; */
 }
 
             /* SCROLL TOP  */
