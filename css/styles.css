@@ -220,15 +220,12 @@ margin-left: 15px;
     transition: all 1s;
 }
 
-
-
-
-
-
+        /* SKILL CIRCLE  */
 .round {
     margin: 30px 0;
     min-height: 120px;
     position: relative;
+    text-align: center;
 }
 
 .round strong {
@@ -243,25 +240,6 @@ margin-left: 15px;
 }
 
 
-
-.progress-bar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #ddd;
-  position: relative;
-}
-
-.progress {
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background-color: #4CAF50;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: rotate(-90deg);
-}
 
  .idioma-progress-circle {
     position: relative;
@@ -281,7 +259,7 @@ margin-left: 15px;
     background-color: #fff;
     border-radius: 50%;
  }
- .idioma-progress-circle  .value-container, .value-container2 {
+ .idioma-progress-circle  .value-container{
     position: relative;
     font-size: 13px;
     opacity: 0.7;
@@ -291,120 +269,8 @@ margin-left: 15px;
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 5px;
  }
-
-
-
-
-
- .block {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 180px;
-	height: 180px;
-	border-radius: 50%;
-}
-
-.box {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: calc(100% - 50px);
-	height: calc(100% - 50px);
-	border-radius: 50%;
-
-}
-
-.box::before {
-	position: absolute;
-	content: '';
-	width: calc(100% + 28px);
-	height: calc(100% + 28px);
-	border-radius: 50%;
-}
-
-.box .number span {
-	font-size: 13px;
-    opacity: 0.7;
-
-}
-
-.box .title {
-	font-size: 15px;
-	color: #9b9b9b;
-}
-
-.svg {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	fill: none;
-	transform: rotate(-90deg);
-}
-
-.circle {
-	stroke: url(#gradientStyle);
-	stroke-width: 4px;
-	stroke-dasharray: 503;
-	stroke-dashoffset: 503;
-	animation-duration: 2s;
-	animation-timing-function: linear;
-	animation-fill-mode: forwards;
-	transition: 2s stroke-dashoffset;
-}
-
-
-
-
-.inner-box{
-	position: relative;
-	padding-left: 230px;
-	padding-top: 70px;
-	min-height: 200px;
-}
-
-.graph-outer{
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 200px;
-	height: 200px;
-	display: inline-block;
-	text-align: center;
-	background: #fafafa;
-	border-radius: 50%;
-}
-
-.graph-outer .count-box{
-    position: absolute;
-    left: 50%;
-    margin-left: -40px;
-    top: 50%;
-    margin-top: -40px;
-    width: 80px;
-    height: 80px;
-    padding: 20px 10px;
-    font-size: 20px;
-    color: #495369;
-    font-weight: 500;
-    line-height: 40px;
-    background: #ffffff;
-    border-radius: 50%;
-    box-shadow: 0 0 5px 0 rgba(0,0,0,0.10);
-}
-
-.text{
-	position: relative;	
-	font-size: 17px;
-	line-height: 30px;
-	text-transform: uppercase;
-	font-weight: 400;
-}
-
 
 
 
