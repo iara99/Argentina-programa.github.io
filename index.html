@@ -173,6 +173,24 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+
+
+
+                                <div class="col-12 col-md-4">
+                                    <div class="idioma-progress-circle">
+                                        <div class="value-container">0%</div>
+                                    </div>
+                                    <div class="idioma-name">Español</div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="idioma-progress-circle ingles">
+                                        <div class="value-container value-ingles">0%</div>
+                                    </div>
+                                    <div class="idioma-name">Ingles</div>
+                                </div>                              
+                                
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -184,34 +202,49 @@
                     <div class="h2-background"></div>
                     <h2>MIS TRABAJOS</h2>
                     <div class="row trabajos-container">
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="trabajitos"><img src="images/work1.png"></div>
+                        <div class="col-12 trabajos-nav" id="filter-button">
+                            <div class="button-group filters-button-group">
+                                <button class="current" data-filter="*"> Todos</button>
+                                <button  data-filter=".website">Websites</button>
+                                <button  data-filter=".dashboard">Dashboard</button>
+                                <button  data-filter=".app">App mobile</button>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="trabajitos"><img src="images/work2.png"></div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="trabajitos"><img src="images/work3.png"></div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="trabajitos"><img src="images/work4.png"></div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="trabajitos"><img src="images/work5.png"></div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="trabajitos"><img src="images/work6.png"></div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="trabajitos"><img src="images/work7.png"></div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="trabajitos"><img src="images/work8.png"></div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="trabajitos"><img src="images/work9.png"></div>
+                        <div class="col-12">
+                            <div class="row trabajos-content">
+                                <div class="col-12 col-md-6 col-lg-4 trabajitos app" data-category="app">
+                                    <img src="images/work1.png">
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 trabajitos app" data-category="app">
+                                    <img src="images/work2.png">
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 trabajitos dashboard" data-category="dashboard">
+                                    <img src="images/work3.png">
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 trabajitos website" data-category="website">
+                                    <img src="images/work4.png">
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 trabajitos app" data-category="app">
+                                    <img src="images/work5.png">
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 trabajitos dashboard" data-category="dashboard">
+                                    <img src="images/work6.png">
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 trabajitos app" data-category="app">
+                                    <img src="images/work7.png">
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 trabajitos website" data-category="website">
+                                    <img src="images/work8.png">
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 trabajitos app" data-category="app">
+                                    <img src="images/work9.png">
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+
+
                 </section>
                 <section id="contact">
                     <div class="h2-background"></div>
@@ -220,12 +253,15 @@
                 <button onclick="topFunction()" id="TopBtn" class="top" title="Go to top">+</button>
             </div>
         </div>
-    </div>    
+    </div>   
+
+    </footer> 
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

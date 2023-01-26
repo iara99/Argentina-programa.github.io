@@ -284,7 +284,48 @@ margin-left: 15px;
 .trabajitos img {
     width: 100%;
     border-radius: 10px;
+    transition: all 0.3s;
+    opacity: 0.8;
 }
+.trabajitos:hover img {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.trabajos-nav {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.trabajos-nav button {
+    margin: 0 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+    background: none;
+    border: none;
+}
+
+.trabajos-nav button:active, .trabajos-nav button:focus, .trabajos-nav button:focus-visible {
+    border: none;
+    outline: none;
+}
+
+.trabajos-nav button:hover {
+    color: #9780C8;
+}
+
+.trabajos-nav button {
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+}
+.trabajos-nav button.current {
+    border-bottom: 2px solid #9780C8;
+    color: #9780C8;
+}
+
+
+
+
 
 
 

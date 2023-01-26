@@ -56,24 +56,24 @@ function circle(el){
 
 
 
-let progressBarCircle = document.querySelector(".idioma-progress-circle");
-let valueContainer = document.querySelector(".value-container");
+// let progressBarCircle = document.querySelector(".idioma-progress-circle");
+// let valueContainer = document.querySelector(".value-container");
 
-let progressValue = 0;
-let progressEndValue = 100;
-let speed = 20;
+// let progressValue = 0;
+// let progressEndValue = 100;
+// let speed = 20;
 
-let progress = setInterval(circulo, speed);
+// let progress = setInterval(circulo, speed);
 
 
-function circulo(){
-  progressValue++;
-  valueContainer.textContent = `${progressValue}%`;
-  progressBarCircle.style.background = `conic-gradient( #F28B8B ${progressValue * 3.6}deg, #FCE9E9 ${progressValue * 3.6}deg)`;
-  if(progressValue == progressEndValue){
-    clearInterval(progress);
-  }
-}
+// function circulo(){
+//   progressValue++;
+//   valueContainer.textContent = `${progressValue}%`;
+//   progressBarCircle.style.background = `conic-gradient( #F28B8B ${progressValue * 3.6}deg, #FCE9E9 ${progressValue * 3.6}deg)`;
+//   if(progressValue == progressEndValue){
+//     clearInterval(progress);
+//   }
+// }
 
 
 
@@ -84,14 +84,80 @@ function onSkills() {
   if(sectionPos < screenPos){
     showProgress();
     circle('.round');
-    circulo();
+    // circulo();
     window.removeEventListener('scroll', onSkills);
   }
 };
 window.addEventListener('scroll', onSkills);
 
 
+// $(document).ready(function(){
 
+//   $(window).on("load", function(){
+//     var $container = $('.trabajos-content');
+//     $container.isotope({
+//       filter: '*',
+//       animationOptions: {
+//         queue: true
+//       }
+//     });
+//     $('.trabajos-nav li').click(function(){
+//       $('.trabajos-nav .current').removeClass('current');
+//       $this.addClass('current');
+//       var selector = $(this).attr('data-filter');
+//       $container.isotope ({
+//         filter: selector,
+//         animationOptions: {
+//         queue: true
+//         }
+//       });
+//       return false;
+//     });
+
+//   });
+//   $('.trabajos-content').mixItUp();
+
+// });
+
+
+
+
+
+
+
+// init Isotope
+var $trabajoscontent = $('.trabajos-content').isotope({
+  itemSelector: '.trabajitos',
+  // layoutMode: 'fitRows'
+});
+// filter functions
+var filterFns = {
+  // show if number is greater than 50
+  numberGreaterThan50: function() {
+    var number = $(this).find('.number').text();
+    return parseInt( number, 10 ) > 50;
+  },
+  // show if name ends with -ium
+  ium: function() {
+    var name = $(this).find('.name').text();
+    return name.match( /ium$/ );
+  }
+};
+// bind filter button click
+$('.filters-button-group').on( 'click', 'button', function() {
+  var filterValue = $( this ).attr('data-filter');
+  // use filterFn if matches value
+  filterValue = filterFns[ filterValue ] || filterValue;
+  $trabajoscontent.isotope({ filter: filterValue });
+});
+// change is-checked class on buttons
+$('.button-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.current').removeClass('current');
+    $( this ).addClass('current');
+  });
+});
 
 
     // PROGRESS CIRCLE
