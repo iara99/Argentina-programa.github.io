@@ -14,6 +14,19 @@
     <meta property="og:description" content="Mi CV" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script>
+        function init() {
+            eliminarCookies();
+}
+        function eliminarCookies() {
+          document.cookie.split(";").forEach(function(c) {
+            document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+          });
+        }
+        $('#clear').click(function() {
+          eliminarCookies();
+        })
+      </script>
 </head>
 
 <body>
@@ -91,7 +104,7 @@
                     <h2>HABILIDADES</h2>
                     
                     <div class="row">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-lg-6">
                             <h3><img src="images/frontend.png">FRONTEND</h3>
                             <div class="row">
                                 <div class="col-12">
@@ -122,7 +135,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-lg-6">
                             <h3><img src="images/design.png">DISEÑO</h3>
                             <div class="row">
                                 <div class="col-12">
@@ -151,28 +164,46 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-lg-6">
                             <h3><img src="images/idiomas.png">IDIOMAS</h3>
                             <div class="row">
-                                <div class="col-12 col-md-4">
+                                <div class="col-12 col-md-6 col-lg-4">
                                     <div class="round" data-value="1" data-size="115" data-thikness="80">
                                         <strong class="value-container2"></strong>
                                         <div class="idioma-name">Español</div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4">
-                                    <div class="round" data-value="0.35" data-size="115" data-thikness="80">
+                                <div class="col-12 col-md-6 col-xl-4">
+                                    <div class="round" data-value="0.50" data-size="115" data-thikness="80">
                                         <strong class="value-container2"></strong>
                                         <div class="idioma-name">Inglés</div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4">
+                                <div class="col-12 col-md-6 col-xl-4">
                                     <div class="round" data-value="0.15" data-size="115" data-thikness="80">
                                         <strong class="value-container2"></strong>
                                         <div class="idioma-name">Coreano</div>
                                     </div>
                                 </div>
                             </div>
+
+
+
+                        <!-- <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <div class="idioma-progress-circle">
+                                        <div class="value-container">0%</div>
+                                    </div>
+                                    <div class="idioma-name">Español</div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="idioma-progress-circle ingles">
+                                        <div class="value-container value-ingles">0%</div>
+                                    </div>
+                                    <div class="idioma-name">Ingles</div>
+                                </div>                              
+                            </div> -->
+
                         </div>
                     </div>
                 </section>
@@ -192,7 +223,7 @@
                                 <button data-filter=".app">App mobile</button>
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="">
                             <div class="row trabajos-content">
                                 <div class="col-12 col-md-6 col-lg-4 trabajitos app" data-category="app">
                                     <img src="images/work1.png">
@@ -230,7 +261,30 @@
                 </section>
                 <section id="contact">
                     <div class="h2-background"></div>
-                    <h2>CONTACTO</h2>                   
+                    <h2>CONTACTO</h2>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <form>
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <!-- <label for="nombre" class="form-label">Nombre</label> -->
+                                        <input style="font-size: 12px; opacity:0.7; padding: 10px;" type="text" class="form-control" id="nombre" placeholder="Nombre">
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                        <!-- <label for="email" class="form-label">Email</label> -->
+                                        <input style="font-size: 12px; opacity:0.7; padding: 10px;" type="email" class="form-control" id="email" placeholder="Email">
+                                    </div>
+                                
+                                    <div class="mb-3">
+                                        <!-- <label for="mensaje" class="form-label">Mensaje</label> -->
+                                        <textarea style="font-size: 12px; opacity:0.7; padding: 10px;" class="form-control" id="mensaje" rows="6" placeholder="Escriba un mensaje..."></textarea>
+                                    </div>
+                                
+                                </div>
+                                <button type="submit" value="Submit" class="col-4" style="background-color: #F28B8B; padding: 10px 15px; border-radius: 5px; border: none; color: #fff; float: right; font-size: 13px;">ENVIAR MENSAJE</button>                    
+                            </form>
+                        </div>
+                    </div>
                 </section>
                 <button onclick="topFunction()" id="TopBtn" class="top" title="Go to top"><img style="height: 40px; padding: 10px;" src="images/to-top.png"></button>
             </div>

@@ -1,5 +1,11 @@
-      // SCROLL TOP
-let mybutton = document.getElementById("TopBtn");
+function onInit(){
+  localStorage.clear();
+}
+
+
+// SCROLL TOP
+
+      let mybutton = document.getElementById("TopBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -94,11 +100,10 @@ window.addEventListener('scroll', onSkills);
 
 
 
-
+        // FILTRO TRABAJOS 
 // init Isotope
 var $trabajoscontent = $('.trabajos-content').isotope({
   itemSelector: '.trabajitos',
-  // layoutMode: 'fitRows'
 });
 // filter functions
 var filterFns = {
@@ -120,7 +125,7 @@ $('.filters-button-group').on( 'click', 'button', function() {
   filterValue = filterFns[ filterValue ] || filterValue;
   $trabajoscontent.isotope({ filter: filterValue });
 });
-// change is-checked class on buttons
+// change current class on buttons
 $('.button-group').each( function( i, buttonGroup ) {
   var $buttonGroup = $( buttonGroup );
   $buttonGroup.on( 'click', 'button', function() {

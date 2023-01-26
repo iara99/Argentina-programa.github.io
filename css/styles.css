@@ -230,7 +230,7 @@ margin-left: 15px;
 
 .round strong {
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     margin-top: -50px;
     transform: translate(-50%);
@@ -238,6 +238,14 @@ margin-left: 15px;
     opacity: 0.7;
     font-weight: 400;
 }
+.idioma-name {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+ }
+
 
 
 
@@ -264,13 +272,7 @@ margin-left: 15px;
     font-size: 13px;
     opacity: 0.7;
  }
- .idioma-name {
-    font-weight: 600;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 5px;
- }
+
 
 
             /* MIS TRABAJOS  */
@@ -299,9 +301,11 @@ margin-left: 15px;
     margin-bottom: 10px;
     transition: all 0.3s;
     background: none;
-    border: none;
     color: #5E5E5E;
     font-size: 14px;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 2px solid transparent;
 }
 .trabajos-nav button:active, .trabajos-nav button:focus, .trabajos-nav button:focus-visible {
     border: none;
@@ -309,10 +313,6 @@ margin-left: 15px;
 }
 .trabajos-nav button:hover {
     color: #9780C8;
-}
-.trabajos-nav button {
-    padding: 5px 0;
-    border-bottom: 2px solid transparent;
 }
 .trabajos-nav button.current {
     border-bottom: 2px solid #9780C8;
