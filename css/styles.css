@@ -300,6 +300,8 @@ margin-left: 15px;
     transition: all 0.3s;
     background: none;
     border: none;
+    color: #5E5E5E;
+    font-size: 14px;
 }
 .trabajos-nav button:active, .trabajos-nav button:focus, .trabajos-nav button:focus-visible {
     border: none;
