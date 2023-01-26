@@ -277,7 +277,6 @@ margin-left: 15px;
 .trabajos-container{
     padding: 0 15px;
 }
-
 .trabajitos {
     margin: 10px 0; 
 }
@@ -291,12 +290,10 @@ margin-left: 15px;
     transform: scale(1.05);
     opacity: 1;
 }
-
 .trabajos-nav {
     margin: 0 auto;
     margin-bottom: 20px;
 }
-
 .trabajos-nav button {
     margin: 0 10px;
     margin-bottom: 10px;
@@ -304,16 +301,13 @@ margin-left: 15px;
     background: none;
     border: none;
 }
-
 .trabajos-nav button:active, .trabajos-nav button:focus, .trabajos-nav button:focus-visible {
     border: none;
     outline: none;
 }
-
 .trabajos-nav button:hover {
     color: #9780C8;
 }
-
 .trabajos-nav button {
     padding: 5px 0;
     border-bottom: 2px solid transparent;
@@ -322,9 +316,6 @@ margin-left: 15px;
     border-bottom: 2px solid #9780C8;
     color: #9780C8;
 }
-
-
-
 
 
 
@@ -350,8 +341,7 @@ margin-left: 15px;
     z-index: 99;
     border: none; 
     background-color: #F28B8B; 
-    color: white; 
-    padding: 9px 15px;
+    color: white;
     border-radius: 25px;
     transition: 0.3s;
   }

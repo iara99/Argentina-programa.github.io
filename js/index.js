@@ -48,7 +48,7 @@ function showProgress(){
 function circle(el){
   $(el).circleProgress({fill: {color: '#F28B8B'}})
   .on('circle-animation-progress', function(event, progress, stepValue){
-    $(this).find('.value-container2').text(String(stepValue.toFixed(2)).substr(2) + '%')
+    $(this).find('.value-container2').text(parseInt(stepValue * 100) + '%');
   });
 };
 
@@ -89,36 +89,6 @@ function onSkills() {
   }
 };
 window.addEventListener('scroll', onSkills);
-
-
-// $(document).ready(function(){
-
-//   $(window).on("load", function(){
-//     var $container = $('.trabajos-content');
-//     $container.isotope({
-//       filter: '*',
-//       animationOptions: {
-//         queue: true
-//       }
-//     });
-//     $('.trabajos-nav li').click(function(){
-//       $('.trabajos-nav .current').removeClass('current');
-//       $this.addClass('current');
-//       var selector = $(this).attr('data-filter');
-//       $container.isotope ({
-//         filter: selector,
-//         animationOptions: {
-//         queue: true
-//         }
-//       });
-//       return false;
-//     });
-
-//   });
-//   $('.trabajos-content').mixItUp();
-
-// });
-
 
 
 
