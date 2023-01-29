@@ -27,20 +27,21 @@ section {
 #site-cv {
     margin: 25px auto;
     color: #5E5E5E;
+    box-shadow: 0px 0px 20px -5px #f28b8b;
 }
 
               /* SIDEBAR */
 
 #site-cv .sidebar {
     background-color: #F8F8F8;
-    height: 680px;
+    height: 750px;
     border-radius:15px 0 0 15px;
     position: sticky;
     top: 0;
     z-index: 99;
 }
 .sidebar ul {
-    margin: 150px 0;
+    margin: 200px 0;
     padding-left: 0px;
 }
 .sidebar li {
@@ -150,6 +151,10 @@ h3 img {
 }
 
             /* SOBRE MI  */
+
+.mi-info {
+    margin: 30px ;
+}
 .photo {
     width: 125px;
     margin-top: 10px;
@@ -168,9 +173,7 @@ color: #5E5E5E;
 opacity: 0.5;
 margin-left: 15px;
 }
-.mi-info {
-    margin: 30px ;
-}
+
 .descripcion {
     margin-left: 15px;
     font-weight: 400;
@@ -188,7 +191,21 @@ margin-left: 15px;
     font-weight: 400;
 }
 
-
+#aboutme h3 {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+.intereses img {
+    height: 90px;
+    display: block;
+    margin: 10px auto;
+}
+.intereses p {
+    text-align: center;
+    color: #F28B8B;
+    font-weight: 500;
+    font-size: 16px;
+}
             /* HABILIDADES  */
 .skill {
     margin: 15px 25px;
@@ -320,6 +337,53 @@ margin-left: 15px;
 }
 
 
+            /* CONTACTO  */
+#contact form {
+    margin: 0 40px;
+}
+#contact form input, #contact form textarea {
+    font-size: 13px;
+    opacity:0.8;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #9780c8;
+    border-radius: 5px 5px 0 0;
+    background: #fdf4f4;
+}
+
+#contact form button {
+    background-color: #F28B8B;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    width: 200px;
+    float: right;
+    font-size: 13px;
+    transition: 0.3s;
+}
+#contact form button:hover {
+    background-color: #9780C8;
+}
+#contact form .form-control:focus {
+    box-shadow: 0px 0px 5px 1px rgb(242 139 139 / 53%);
+    border: none;
+}
+
+#contact form button img {
+    width: 18px;
+    margin-right: 10px;
+}
+.info-contacto{
+    margin: 20px 0;
+}
+.info-contacto p {
+    font-size: 14px;
+}
+.info-contacto img {
+    width: 20px;
+    margin-right: 10px;
+}
 
 
             /* SCROLL */
@@ -391,7 +455,43 @@ margin-left: 15px;
 
 
             /* CONTENT  */
+    h2 {
+        text-align: center;
+    }
+    .h2-background {
+        top: 40px;
+        left: 110px;
+        width: 200px;
+    }
+
     #site-cv .content {
         border-radius: 0 0 15px 15px;
+    }
+
+
+    /* SOBRE MI */
+
+    .photo {
+        display: block;
+        margin: 10px auto;
+    }
+    .name {
+        text-align: center;
+        margin-bottom: 3px;
+    }
+    .puesto {
+        text-align: center;
+    }
+
+    .descripcion {
+        text-align: center;
+    }
+    /*CONTACTO*/
+
+    #contact form button {
+        width: 100%;
+    }
+    .info-contacto{
+        margin: 50px;
     }
   }

@@ -1,8 +1,3 @@
-function onInit(){
-  localStorage.clear();
-}
-
-
 // SCROLL TOP
 
       let mybutton = document.getElementById("TopBtn");
@@ -58,31 +53,6 @@ function circle(el){
   });
 };
 
-
-
-
-
-// let progressBarCircle = document.querySelector(".idioma-progress-circle");
-// let valueContainer = document.querySelector(".value-container");
-
-// let progressValue = 0;
-// let progressEndValue = 100;
-// let speed = 20;
-
-// let progress = setInterval(circulo, speed);
-
-
-// function circulo(){
-//   progressValue++;
-//   valueContainer.textContent = `${progressValue}%`;
-//   progressBarCircle.style.background = `conic-gradient( #F28B8B ${progressValue * 3.6}deg, #FCE9E9 ${progressValue * 3.6}deg)`;
-//   if(progressValue == progressEndValue){
-//     clearInterval(progress);
-//   }
-// }
-
-
-
 function onSkills() {
   const sectionPos = skillsSection.getBoundingClientRect().top;
   const screenPos = window.innerHeight / 2;
@@ -90,7 +60,6 @@ function onSkills() {
   if(sectionPos < screenPos){
     showProgress();
     circle('.round');
-    // circulo();
     window.removeEventListener('scroll', onSkills);
   }
 };
@@ -133,36 +102,3 @@ $('.button-group').each( function( i, buttonGroup ) {
     $( this ).addClass('current');
   });
 });
-
-
-    // PROGRESS CIRCLE
-// let progressBarCircle = document.querySelector(".idioma-progress-circle");
-// let valueContainer = document.querySelector(".value-container");
-// let progressBaringles = document.querySelector(".ingles");
-// let valueContaineringles = document.querySelector(".value-ingles");
-
-// let progressValue = 0;
-// let progressValueIngles = 0;
-// let progressEndValue = 100;
-// let progressEndValueIngles = 35;
-// let speed = 20;
-// let speed2 = 60;
-
-
-  // let progress = setInterval(() => {
-  //   progressValue++;
-  //   valueContainer.textContent = `${progressValue}%`;
-  //   progressBarCircle.style.background = `conic-gradient( #F28B8B ${progressValue * 3.6}deg, #FCE9E9 ${progressValue * 3.6}deg)`;
-  //   if(progressValue == progressEndValue){
-  //     clearInterval(progress)
-  //   }
-  // }, speed);
-
-// let progressIngles = setInterval(() => {
-//   progressValueIngles++;
-//   valueContaineringles.textContent = `${progressValueIngles}%`;
-//   progressBaringles.style.background = `conic-gradient( #F28B8B ${progressValueIngles * 3.6}deg, #FCE9E9 ${progressValueIngles * 3.6}deg)`;
-//   if(progressValueIngles == progressEndValueIngles){
-//     clearInterval(progressIngles)
-//   }
-// }, speed2);
