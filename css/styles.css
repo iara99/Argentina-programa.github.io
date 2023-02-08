@@ -27,25 +27,29 @@ section {
 #site-cv {
     margin: 25px auto;
     color: #5E5E5E;
-    box-shadow: 0px 0px 20px -5px #f28b8b;
+    /* box-shadow: 0px 0px 20px -5px #f28b8b; */
 }
 
               /* SIDEBAR */
 
 #site-cv .sidebar {
-    background-color: #F8F8F8;
-    height: 750px;
+    /* background-color: #Fbfbfb; */
+    height: 720px;
     border-radius:15px 0 0 15px;
     position: sticky;
-    top: 0;
+    top: 10px;
     z-index: 99;
 }
 .sidebar ul {
-    margin: 200px 0;
-    padding-left: 0px;
+    background-color: #Fbfbfb;
+    border-radius: 5px;
+    height: 100%;
+    padding: 50px 0;
+    /* margin: 200px 0; */
 }
 .sidebar li {
-    margin: 35px 0;
+    /* margin: 35px 0; */
+    padding: 15px 20px;
 }
 .sidebar a{
     color: #5E5E5E;
@@ -122,7 +126,7 @@ a:hover span.contact, .active span.contact {
 h2 {
     color: #F28B8B;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 35px;
     margin: 0px 40px 45px 40px;
     position: relative;
     z-index: 5;
@@ -130,11 +134,11 @@ h2 {
     /* padding: 10px; */
 }
 .h2-background {
-    background-color: #F8F8F8;
+    background-color: #fce9e9;
     width: 150px;
     height: 25px;
     position: relative;
-    top: 40px;
+    top: 45px;
     left: 15px;
     z-index: 0;
 }
@@ -156,7 +160,7 @@ h3 img {
     margin: 30px ;
 }
 .photo {
-    width: 125px;
+    width: 100%;
     margin-top: 10px;
 }
 .name {
@@ -180,11 +184,12 @@ margin-left: 15px;
     font-size: 14px;
 }
 .info-personal {
-    margin: 30px 20px;
+    margin: 30px;
 }
 .title-info-cv {
     color: #F28B8B;
     font-weight: 600;
+    margin-bottom: 5px;
 }
 .text-info-cv {
     font-size: 13px;
@@ -192,7 +197,7 @@ margin-left: 15px;
 }
 
 #aboutme h3 {
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 25px;
 }
 .intereses img {
@@ -289,8 +294,48 @@ margin-left: 15px;
     font-size: 13px;
     opacity: 0.7;
  }
+            /* EXPERIENCIA*/
 
+.timeline {
+    margin-top: 30px;
+}
+.timeline li {
+    border-left: dotted 2px #ececec;
+    padding: 0 0 40px 20px;
+}
+.timeline h4 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #F28B8B;
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
 
+.timeline p {
+    font-weight: 400;
+    font-size: 12px; 
+    color: rgba(93, 93, 93, 0.7);
+}
+.timeline span {
+    font-weight: 500;
+    font-size: 12px;
+    color: #F28B8B;
+    background-color: #FCE9E9;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.timeline li:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    margin-left: -26px;
+    background: #CFBEF3;
+    display: block;
+    position: absolute;
+    margin-top: 8px;
+}
 
             /* MIS TRABAJOS  */
 .trabajos-container{
@@ -339,7 +384,7 @@ margin-left: 15px;
 
             /* CONTACTO  */
 #contact form {
-    margin: 0 40px;
+    margin-left: 40px;
 }
 #contact form input, #contact form textarea {
     font-size: 13px;
@@ -378,7 +423,7 @@ margin-left: 15px;
     margin: 20px 0;
 }
 .info-contacto p {
-    font-size: 14px;
+    font-size: 12px;
 }
 .info-contacto img {
     width: 20px;
@@ -420,7 +465,7 @@ margin-left: 15px;
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
 
     #site-cv {
         width: 90%;
@@ -488,10 +533,31 @@ margin-left: 15px;
     }
     /*CONTACTO*/
 
+    #contact form {
+        margin: 0 30px;
+    }
     #contact form button {
         width: 100%;
     }
     .info-contacto{
-        margin: 50px;
+        margin: 35px 40px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+
+
+    /*CONTACTO*/
+
+    #contact form {
+        margin: 0 20px;
+    }
+
+    #contact form button {
+        width: 100%;
+    }
+
+    .info-contacto{
+        margin: 35px 30px;
     }
   }
