@@ -476,12 +476,22 @@ margin-left: 15px;
     }
 
             /* SIDEBAR  */
+
+        
+    #site-cv .sidebar-container {
+        position: sticky;
+        top: -10px;
+        z-index: 99;
+        padding: 0;
+    }
     #site-cv .sidebar {
         height: 75px;
-        border-radius:15px 15px 0 0;
-        /* position: initial; */
+        display: block;
+        border-radius: 6px 6px 0 0;
         padding: 0;
-        top: -10px;
+    }
+    .sidebar .redes-sociales {
+        display: none;
     }
     .sidebar ul {
         margin: 0;
@@ -489,7 +499,8 @@ margin-left: 15px;
         height: 75px;
     }
     .sidebar li {
-        margin: 15px 2px;
+        /* margin: 15px 2px; */
+        margin: 0;
         display: inline-block;
         width: 15%;
     }
