@@ -19,14 +19,22 @@
 <body>
     <div class="container" id="site-cv">
         <div class="row">
-            <nav class="col-12 col-md-4 col-lg-3 sidebar">
-                <ul>
-                    <li class="list active"><a href="#aboutme"><span class="me"></span> SOBRE MI</a></li>
-                    <li class="list"><a href="#skills"><span class="skills"></span>HABILIDADES</a></li>
-                    <li class="list"><a href="#experience"><span class="experience"></span>EXPERIENCIA</a></li>
-                    <li class="list"><a href="#works"><span class="works"></span>MIS TRABAJOS</a></li>
-                    <li class="list"><a href="#contact"><span class="contact"></span>CONTACTO</a></li>
-                </ul>
+            <nav class="col-12 col-md-4 col-lg-3">
+                <div class="sidebar">
+                    <ul>
+                        <li class="list active"><a href="#aboutme"><span class="me"></span> SOBRE MI</a></li>
+                        <li class="list"><a href="#skills"><span class="skills"></span>HABILIDADES</a></li>
+                        <li class="list"><a href="#experience"><span class="experience"></span>EXPERIENCIA</a></li>
+                        <li class="list"><a href="#works"><span class="works"></span>PORTFOLIO</a></li>
+                        <li class="list"><a href="#contact"><span class="contact"></span>CONTACTO</a></li>
+                    </ul>
+                    <div class="redes-sociales">
+                        <a href="https://www.instagram.com" target="_blank"><img src="images/ig.png"></a>
+                        <a href="https://github.com" target="_blank"><img src="images/git.png"></a>
+                        <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png"></a>
+                        <a href="https://dribbble.com" target="_blank"><img src="images/dribbble.png"></a>
+                    </div>
+                </div>
             </nav>
             
             <div class="col-12 col-md-8 col-lg-9 content">
@@ -40,61 +48,68 @@
                         <div class="col-12 col-lg-7 col-xl-8">
                             <p class="name">Josephine James</p>
                             <p class="puesto">Frontend Developer</p>
-                            <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at metus ex. Cras gravida, libero et suscipit luctus, leo massa iaculis diam, id hendrerit arcu tellus a ante. Nam fermentum tellus eget sem faucibus iaculis. Fusce nec urna ac massa bibendum lobortis. Proin elementum fermentum neque, vitae pretium mauris aliquam et. Integer aliquet efficitur sodales. Integer cursus tortor ex, mollis egestas augue molestie non.</p>
-                        
+                            <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at metus ex. Cras gravida, libero et suscipit luctus, leo massa iaculis diam, id hendrerit arcu tellus a ante. Nam fermentum tellus eget sem faucibus iaculis. Fusce nec urna ac massa bibendum lobortis.</p>
                         </div>
                     </div>
                     <div class="info-personal">
                         <div class="row">
+                            <div class="col-lg-6">Proin elementum fermentum neque, vitae pretium mauris aliquam et. Integer aliquet efficitur sodales. Integer cursus tortor ex, mollis egestas augue molestie non.</div>
                             <div class="col-lg-6">
                                 <div class="row">
-                                    <div class="col-6 col-lg-5 title-info-cv">EDAD</div>
-                                    <div class="col-6 col-lg-7 text-info-cv">23</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6 col-lg-5 title-info-cv">TELÉFONO</div>
-                                    <div class="col-6 col-lg-7 text-info-cv">351 1234567</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6 col-lg-5 title-info-cv">DIRECCIÓN</div>
-                                    <div class="col-6 col-lg-7 text-info-cv">Av. Colón 1245, Córdoba</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-6 col-lg-5 title-info-cv">NACIONALIDAD</div>
-                                    <div class="col-6 col-lg-7 text-info-cv">Argentina</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6 col-lg-5 title-info-cv">EMAIL</div>
-                                    <div class="col-6 col-lg-7 text-info-cv">josephine.james@gmail.com</div>
+                                    <div class="col-4">
+                                        <p class="title-info-cv">EDAD</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="text-info-cv">23</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="title-info-cv">TELÉFONO</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="text-info-cv">123456789</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="title-info-cv">DIRECCIÓN</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="text-info-cv">Av. Colón 1245, Córdoba</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="title-info-cv">EMAIL</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="text-info-cv">josephine.james@gmail.com</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <h3>INTERESES</h3>
+                   
                     <div class="row intereses">
-                        <div class="col-6 col-md-4 col-lg-2">
+                        <div>
+                            <h3><img src="images/intereses.png">INTERESES</h3>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 icon-intereses">
                             <img src="images/photo.png">
                             <p>Fotografía</p>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-2">
+                        <div class="col-6 col-md-4 col-lg-2 icon-intereses">
                             <img src="images/korea.png">
                             <p>Corea</p>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-2">
+                        <div class="col-6 col-md-4 col-lg-2 icon-intereses">
                             <img src="images/games.png">
                             <p>Juegos</p>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-2">
+                        <div class="col-6 col-md-4 col-lg-2 icon-intereses">
                             <img src="images/sing.png">
                             <p>Canto</p>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-2">
+                        <div class="col-6 col-md-4 col-lg-2 icon-intereses">
                             <img src="images/cat.png">
                             <p>Gatos</p>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-2">
+                        <div class="col-6 col-md-4 col-lg-2 icon-intereses">
                             <img src="images/travel.png">
                             <p>Viajes</p>
                         </div>
@@ -188,24 +203,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
-
-                        <!-- <div class="row">
-                                <div class="col-12 col-md-4">
-                                    <div class="idioma-progress-circle">
-                                        <div class="value-container">0%</div>
-                                    </div>
-                                    <div class="idioma-name">Español</div>
-                                </div>
-                                <div class="col-12 col-md-4">
-                                    <div class="idioma-progress-circle ingles">
-                                        <div class="value-container value-ingles">0%</div>
-                                    </div>
-                                    <div class="idioma-name">Ingles</div>
-                                </div>                              
-                            </div> -->
-
                         </div>
                     </div>
                 </section>
@@ -213,8 +210,8 @@
                     <div class="h2-background"></div>
                     <h2>EXPERIENCIA</h2>
                     <div class="row">
-                        <div class="col-md-6">
-                            <h3><img src="images/frontend.png">TRABAJOS</h3>
+                        <div class="col-md-3">
+                            <h3><img src="images/trabajos.png">TRABAJOS</h3>
                             <div class="timeline">
                                 <ul>
                                     <li>
@@ -226,13 +223,18 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <h3><img src="images/frontend.png">ESTUDIOS</h3>
+                            <h3><img src="images/estudios.png">ESTUDIOS</h3>
                             <div class="timeline">
                                 <ul>
                                     <li>
                                         <span>2017 - Presente</span>
                                         <h4>Diseño de Multimedios</h4>
                                         <p>Colegio Universitario IES</p>
+                                    </li>
+                                    <li>
+                                        <span>2019 - 2022</span>
+                                        <h4>Curso de Idioma Coreano</h4>
+                                        <p>Facultad de Lenguas - UNC</p>
                                     </li>
                                     <li>
                                         <span>2016</span>
@@ -257,7 +259,7 @@
                 </section>
                 <section id="works">
                     <div class="h2-background"></div>
-                    <h2>MIS TRABAJOS</h2>
+                    <h2>PORTFOLIO</h2>
                     <div class="row trabajos-container">
                         <div class="col-12 trabajos-nav" id="filter-button">
                             <div class="button-group filters-button-group">
