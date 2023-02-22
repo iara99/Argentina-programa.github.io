@@ -167,7 +167,7 @@ h2 {
 } */
 
 h3 {
-    font-size: 18px;
+    font-size: 16px;
     margin: 30px 25px 15px 25px;
     padding: 10px;
     border-bottom: 2px solid #9780C8;
@@ -175,7 +175,16 @@ h3 {
 }
 h3 img {
     margin-right: 10px;
-    width: 30px;
+    width: 23px;
+}
+
+.container-pink {
+    background: #fff4f4;
+    margin-top: 30px;
+    padding: 20px;
+}
+.container-pink h3 {
+    margin: 5px 17px 10px;
 }
 
             /* SOBRE MI  */
@@ -290,15 +299,6 @@ margin-left: 15px;
     opacity: 0;
     transition: all 1s;
 }
-
-.idiomas-container {
-    background: #fff4f4;
-    margin-top: 35px;
-    padding: 20px;
-}
-.idiomas-container h3 {
-    margin: 5px 17px 10px;
-}
         /* SKILL CIRCLE  */
 .round {
     margin: 30px 0;
@@ -358,15 +358,46 @@ margin-left: 15px;
 
 .timeline li:before {
     content: "";
-    width: 10px;
-    height: 10px;
+    width: 13px;
+    height: 13px;
     border-radius: 50px;
-    margin-left: -26px;
-    background: #CFBEF3;
+    margin-left: -28px;
+    background: #fff;
     display: block;
     position: absolute;
-    margin-top: 8px;
+    margin-top: 8px;box-shadow: 2px 1px 0px #CFBEF3;
+    border: 1px solid #CFBEF3;
 }
+
+.servicio {
+   min-height: 172px;
+   background-color: #fff;
+   border-radius: 5px;
+   margin: 20px 5px 10px;
+   padding: 15px;
+   transition: 0.3s;
+}
+.servicio:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px 0px #f28b8b;
+}
+.servicio img {
+    height: 75px;
+    background-color: #fce9e9;
+    padding: 8px;
+    text-align: center;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: block;
+}
+.servicio p {
+   text-align: center;
+   font-weight: 500;
+   margin: 0;
+}
+
 
             /* MIS TRABAJOS  */
 .trabajos-container{
