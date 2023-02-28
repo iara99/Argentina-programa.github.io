@@ -233,7 +233,7 @@ margin-left: 15px;
     line-height: 1;
 }
 
-#aboutme .button-download {
+#aboutme button {
     background-color: #F28B8B;
     padding: 12px 25px;
     border-radius: 5px;
@@ -243,14 +243,17 @@ margin-left: 15px;
     font-size: 13px;
     transition: 0.3s;
     margin: 10px 20px;
+    outline: none;    
 }
-
-#aboutme .button-download img{
+#aboutme button a {
+    color: #fff;
+}
+#aboutme button img{
     width: 22px;
     margin-right: 10px;
 }
 
-#aboutme .button-download:hover {
+#aboutme button:hover {
     background-color: #9780C8;
 }
 .intereses {
@@ -610,7 +613,7 @@ margin-left: 15px;
     }
     .name {
         text-align: center;
-        margin-bottom: 3px;
+        margin: 0;
     }
     .puesto {
         text-align: center;
@@ -618,6 +621,11 @@ margin-left: 15px;
 
     .descripcion {
         text-align: center;
+        margin: 0;
+    }
+
+    .mi-info {
+        margin: 30px 10px;
     }
     /*CONTACTO*/
 
@@ -634,6 +642,11 @@ margin-left: 15px;
 
   @media (min-width: 768px) and (max-width: 991.98px) {
 
+    /* SIDEBAR  */
+
+    .sidebar a {
+        font-size: 16px;
+    }
 
     /*CONTACTO*/
 
@@ -648,4 +661,15 @@ margin-left: 15px;
     .info-contacto{
         margin: 35px 30px;
     }
+  }
+
+  @media (min-width: 991.98px) and (max-width: 1200px) {
+    /* SIDEBAR  */
+    
+    .sidebar a {
+        font-size: 16px;
+    }
+
+
+
   }
